@@ -1,8 +1,12 @@
 # QGIS-python-expressions
 
+Dette repository vil fremadrettet komme til at indeholder div. python kodestumper, som jeg benytter i forbindelse med QGIS. Indtil videre er der kun en kodestump.
+
 ## Find adresse fra muse klik
 
-Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres ved at vælge "Kør objekthandling" og klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise nærmeste adresse for klik positionen.
+Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres ved at aktivere "Kør objekthandling" (knap på værktøjslinjen) og derefter klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise nærmeste adresse for klik positionen.
+
+Python koden er et relativt simpelt eksempel på at udføre en http request vha. QGIS og Python
 
 
 For at få denne expression til at virke.. 
