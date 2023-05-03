@@ -2,7 +2,7 @@
 
 ## Find adresse fra muse klik
 
-Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres vhandlingen aktiveres ved at vælge "Kør objekthandling" og klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise adressen for klik positionen.
+Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres ved at vælge "Kør objekthandling" og klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise nærmeste adresse for klik positionen.
 
 
 For at få denne expression til at virke.. 
