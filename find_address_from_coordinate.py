@@ -26,10 +26,9 @@ else:
 url = url_tmpl.format(pnt2.x(), pnt2.y())
 request = QNetworkRequest(QUrl(url))
 
-# Sæt max tid for request i sekunder
-request.setTransferTimeout(3)
+# Sæt max tid for request i millisekunder (sat til 0.5 sek) 
 
-# Udfør request som en synkron "GET" request (lidt primitivt, 
+# Udfør request som en synkron "GET" request 
 nam = QgsBlockingNetworkRequest()
 nam.get(request, forceRefresh=True)
 # Hent svar
