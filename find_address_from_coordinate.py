@@ -25,6 +25,8 @@ else:
 # Opret url ud fra skabelon/koordinat og opsæt request 
 url = url_tmpl.format(pnt2.x(), pnt2.y())
 request = QNetworkRequest(QUrl(url))
+
+# Sæt max tid for request i sekunder
 request.setTransferTimeout(3)
 
 # Udfør request som en synkron "GET" request (lidt primitivt, 
