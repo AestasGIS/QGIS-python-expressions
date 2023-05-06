@@ -1,6 +1,6 @@
 # QGIS-python-expressions
 
-Dette repository vil fremadrettet komme til at indeholder div. python kodestumper, som jeg benytter i forbindelse med QGIS. Indtil videre er der kun en kodestump.
+Dette repository vil fremadrettet komme til at indeholder div. python kodestumper, som jeg benytter i forbindelse med QGIS. Indtil videre er der kun en kodestump for adresseopslag.
 
 ## Find adresse fra muse klik
 
