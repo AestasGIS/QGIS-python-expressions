@@ -11,7 +11,7 @@ proj_crs = QgsProject.instance().crs()
 # Opsæt tekst skabelon for url kald 
 url_tmpl = 'https://api.dataforsyningen.dk/adgangsadresser/reverse?x={}&y={}&srid=25832&struktur=mini'
 
-# Find position for klik; denne er i projektets korrdinatsystem
+# Find position for klik; denne er i projektets koordinatsystem
 pnt = QgsPointXY(float([% @click_x %]), float([% @click_y %]))
 
 # Tjek om projekt koordinatsystem er lig med EPSG:25832 (som er nødvendigt for DAWA request)
