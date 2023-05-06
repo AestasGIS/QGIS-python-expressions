@@ -4,7 +4,7 @@ from qgis.PyQt.QtNetwork import QNetworkRequest
 from qgis.core import QgsBlockingNetworkRequest, QgsProject, QgsCoordinateTransform, QgsCoordinateReferenceSystem
 from json import loads 
 
-# Opsæt koordinat systemer objekter for hhv. QGIS projekt og for EPSG:25832 
+# Opsæt koordinat system - objekter for hhv. QGIS projekt og for EPSG:25832 
 ref_crs = QgsCoordinateReferenceSystem.fromEpsgId(25832)
 proj_crs = QgsProject.instance().crs()
 
@@ -22,11 +22,12 @@ if proj_crs != ref_crs:
 else:
     pnt2 = pnt
 
-# Opret url ud fra skabelon/koordinat og opsæt request 
+# Opret url ud fra skabelon samt koordinat og opsæt request 
 url = url_tmpl.format(pnt2.x(), pnt2.y())
 request = QNetworkRequest(QUrl(url))
 
 # Sæt max tid for request i millisekunder (sat til 0.5 sek) 
+request.setTransferTimeout(500)
 
 # Udfør request som en synkron "GET" request 
 nam = QgsBlockingNetworkRequest()
@@ -46,5 +47,10 @@ if reply.attribute(QNetworkRequest.HttpStatusCodeAttribute) == 200:
     # Vis element 'betegnelse' i fra dict i messagebox
     QtWidgets.QMessageBox.information(None, "Adresse", adress['betegnelse'])
 
+else:
+    
+    # Skriv fejlmeddelelse
+    QtWidgets.QMessageBox.information(None, "Request fejl ", reply.errorString())
+    
 
 
