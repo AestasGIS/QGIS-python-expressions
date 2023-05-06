@@ -6,7 +6,7 @@ Dette repository vil fremadrettet komme til at indeholder div. python kodestumpe
 
 Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres ved at aktivere "Kør objekthandling" (knap på værktøjslinjen, se fil "menu-line.PNG") og derefter klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise nærmeste adresse for klik positionen. 
 
-Man bør vælge sit reference lag med omhu. Man kan jo kun klikke indenfor et eller andet referenceobjekt i laget, så laget bør være så "fladedækkende" som muligt, som f.eks. kommune polygoner. Selve klikket giver en nøjagtig koordinat, så søgningen på adresse er nøjagtig uanset størrelse og omfang af polygonerne i referencelaget.
+Man bør vælge sit reference lag med omhu. Man kan jo kun klikke indenfor et eller andet objekt i reference-laget, så laget bør være så "fladedækkende" som muligt, som f.eks. kommune polygoner. Selve klikket giver en nøjagtig koordinat, så søgningen på adresse er nøjagtig uanset størrelse og omfang af polygonerne i referencelaget.
 
 
 Python koden er et relativt simpelt eksempel på at udføre en http request (REST) vha. QGIS og Python. Så den kan tilpasses til andre formål.
