@@ -9,7 +9,7 @@ Denne expression virker ved at definere en handling til et eller andet reference
 Man bør vælge sit reference lag med omhu. Man kan jo kun klikke indenfor et eller andet referenceobjekt i laget, så laget bør være så "fladedækkende" som muligt, som f.eks. kommune polygoner. Selve klikket giver en nøjagtig koordinat, så søgningen på adresse er nøjagtig uanset størrelse og omfang af polygonerne i referencelaget.
 
 
-Python koden er et relativt simpelt eksempel på at udføre en http request vha. QGIS og Python
+Python koden er et relativt simpelt eksempel på at udføre en http request (REST) vha. QGIS og Python. Så den kan tilpasses andre formål.
 
 For at få denne expression til at virke.. 
 
