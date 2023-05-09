@@ -45,7 +45,7 @@ if reply.attribute(QNetworkRequest.HttpStatusCodeAttribute) == 200:
     adress = loads(content_string)
     
     # Vis element 'betegnelse' i fra dict i messagebox
-    QtWidgets.QMessageBox.information(None, "Adresse", adress['betegnelse'])
+    QtWidgets.QMessageBox.information(None, "Adresse og matrikel", adress['betegnelse'] + '\n' + adress['matrikelnr'] + '; ' + adress['ejerlavnavn'])
     # Andre mulige oplysninger og der er mange flere
 """
 Andre oplysninger...
