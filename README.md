@@ -2,7 +2,7 @@
 
 Dette repository vil fremadrettet komme til at indeholder div. python kodestumper, som jeg benytter i forbindelse med QGIS. Indtil videre er der kun en kodestump for adresseopslag.
 
-## Find adresse fra muse klik
+## Find adresse og matrikelnummer fra muse klik
 
 Denne expression virker ved at definere en handling til et eller andet reference lag. Efter oprettelse kan funktionen aktiveres ved at aktivere "Kør objekthandling" (knap på værktøjslinjen, se fil "menu-line.PNG") og derefter klikke på et objekt fra reference laget. Funktionen vil derefter bruge koordinaten fra klikket og lave et opslag i DAWA's adresseregister og bruge svaret fra denne til at vise nærmeste adresse for klik positionen. 
 
